@@ -15,6 +15,7 @@ find_package(catkin REQUIRED
     cv_bridge
     tf
 )
+set(OpenCV_DIR "/home/kavin/Library/opencv-3.3.1/build")
 find_package(OpenCV REQUIRED)
 #find_package(PCL REQUIRED)
 
