@@ -4,8 +4,8 @@
     <arg name="y" default="-10.0"/>
     <arg name="z" default="0"/>
 	<arg name="world" default="$(find prometheus_gazebo)/worlds/obstacle.world"/>
-    <arg name="lidar" default="false"/>
-    <arg name="rgbd" default="true"/>
+    <arg name="lidar" default="true"/>
+    <arg name="rgbd" default="false"/>
 	<arg if="$(arg lidar)" name="sdf" default="$(find prometheus_gazebo)/amov_models/p450_3Dlidar/p450_3Dlidar.sdf"/>
     <arg if="$(arg rgbd)" name="sdf" default="$(find prometheus_gazebo)/amov_models/p450_D435i/p450_D435i.sdf"/>
 	<arg if="$(arg lidar)" name="model" default="p450_3Dlidar"/>
